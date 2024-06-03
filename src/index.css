@@ -122,24 +122,3 @@
   background-color: #fcfaf5;
   box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.15);
 }
-.one{
-  padding-left: 48%;
- padding-top: 23%;
-  height: 400px;
-  background-image: url(components/img/rasm1.webp);
-  background-size: cover;
-}
-.two{
-  padding-left: 48%;
- padding-top: 23%;
-  height: 400px;
-  background-image: url(components/img/BB.jpg);
-  background-size: cover;
-}
-.three{
-  padding-left: 48%;
-  padding-top: 23%;
-   height: 400px;
-   background-image: url(components/img/pb.jpg);
-   background-size: cover;
-}
