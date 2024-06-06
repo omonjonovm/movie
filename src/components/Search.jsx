@@ -1,18 +1,19 @@
-import {Component} from 'react'
-class Search  extends Component {
-  constructor(props){
-    super(props)
-    this.state= {term:''}
+import {  useState } from 'react'
+const Search = props => {
+  const [term, setTerm] = useState('')
+  const updateTermHandle = e => {
+    const term = e.target.value.toLowerCase()
+    setTerm(term)
+    props.updateTermHandle(term)
   }
-  updateTermHandle = (e) => {
-      const term = e.target.value.toLowerCase()
-      this.setState({term})
-      this.props.updateTermHandle(term)
-  }
-  render() {
-    return  <input type="text"  className="form-control search-input" placeholder="Kinolarni qidirish" onChange={this.updateTermHandle} value={this.state.term}/>
-  }
-  
+  return (
+    <input type="text"
+      className="form-control search-input"
+      placeholder="Kinolarni qidirish"
+      onChange={updateTermHandle}
+      value={term} />
+  )
 }
+
 
 export default Search
